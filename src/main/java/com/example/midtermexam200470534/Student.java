@@ -115,7 +115,7 @@ public class Student {
 
     public void setMajorCode(String majorCode) {
         majorCode =majorCode.toUpperCase();
-        if(majorCode.length()>=4)
+        if(majorCode.length()==4)
             this.majorCode = majorCode;
         else
             throw new IllegalArgumentException("Invalid code");
